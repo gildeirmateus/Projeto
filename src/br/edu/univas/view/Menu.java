@@ -18,7 +18,7 @@ public class Menu extends JFrame{
 	private JPanel centerPanel;
 	private Dashboard dashboard;
 	private Dias dias;
-	private Café café;
+	private Cafe cafe;
 	private Vendas vendas;
 	
 	public Menu() {
@@ -39,7 +39,7 @@ public class Menu extends JFrame{
 		try {
 			dashboard = new Dashboard();
 			dias= new Dias();
-			café= new Café();
+			cafe= new Cafe();
 			vendas= new Vendas();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -126,14 +126,14 @@ public class Menu extends JFrame{
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				café.updateTable();
+				cafe.updateTable();
 				validate();
 				centerPanel.removeAll();
-				centerPanel.add(café);
+				centerPanel.add(cafe);
 				centerPanel.revalidate();
 				Menu.this.repaint();
 				try {
-					café = new Café();
+					cafe = new Cafe();
 				} catch (SQLException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();

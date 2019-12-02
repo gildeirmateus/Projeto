@@ -23,7 +23,7 @@ import javax.swing.table.DefaultTableModel;
 import br.edu.univas.dao.DadosDAO;
 import br.edu.univas.vo.CafeDados;
 
-public class Café extends JPanel{
+public class Cafe extends JPanel{
 
 	private DadosDAO dadosDAO;
 	private JTextField medidasT;
@@ -31,7 +31,7 @@ public class Café extends JPanel{
 	private JTextField medidasPagarT;
 	private JTextField ValormedidasT;
 	
-	public Café() throws SQLException {
+	public Cafe() throws SQLException {
 		dadosDAO = new DadosDAO();
 		initialize();
 	}
